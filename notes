@@ -1,0 +1,46 @@
+*********************Redux Toolkit**********************
+
+
+npm i
+npm install @redux/toolkit react-redux
+npm start
+npm install react-toastify
+
+ 38:11`
+
+
+ Flow 
+ 1)pehle hamare index.js file me jayenge waha hoga
+     <BrowserRouter>
+        <Provider store={store}>
+          <App />   
+          <Toaster/>  
+        </Provider>
+    </BrowserRouter>
+
+  yaha BrowserRouter use hua hai for making Routes and Provider use hua hai for redux  
+   
+ 2) App component  pehle use kiya hai for rendering first component of App
+ 
+ 3)App me jayenge waha hamare pass hai
+  1)Navbar
+  2)Routes
+
+4)Now , hum jayenge navbar me waha required work karenge then
+
+5)Routes me jo component hai 
+  1)home
+  2)cart
+  
+6)home page component me jaake required work karenge (for ex => get fake data from api calling , or storing all the data in posts)
+
+7)mai post ko as a card dekhna chahta hu and saara ka saara data in the form of array hai isliye , we'll use map fun
+
+8)Now in product component , do required work
+
+9)Now in spinner
+
+10) Now in Cart =>in cart we have two types of data 
+1)show all the items
+2)show the summary
+we can do that by getting the data of cart but it is in slice so we used useSelector()
